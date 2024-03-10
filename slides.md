@@ -20,13 +20,13 @@ favicon: 'https://raw.githubusercontent.com/datarootsio/slidev-theme-dataroots/m
 titleTemplate: '%s'
 ---
 
-# [MLOops]{v-mark.crossed-off=1} [to MLOps]{v-click}
+# [MLOops]{v-mark.crossed-off=1} to MLOps
 
 <br/>
 <br/>
 
-<v-click>
-<carbon-arrow-right/> From ideas to production 🚀
+<v-click v-motion-pop-visible at=2>
+<carbon-arrow-right/> Bringing ideas to production 🚀
 
 March 15th, 2024
 </v-click>
@@ -77,13 +77,14 @@ photo: https://charlas.2023.es.pycon.org/media/avatars/blob_p6VtbO9.jpg
 - 🤖 Tech lead AI @ <img src="https://dataroots.io/branding/logo/logo-green.png" inline-block h-5/>
 
 <style>
-li:not(li:first-child) {
-  margin-top: 0;
+li {
+  margin-top: 0 !important;
 }
 </style>
 
 ---
 hideInToc: true
+layout: default
 ---
 
 # I have worked on different [Data/AI projects]{.gradient-text}
@@ -95,8 +96,7 @@ hideInToc: true
 <br/>
 <br/>
 
-
-<v-clicks>
+<v-clicks >
 
 - Events company 📣
 - No show prediction 🫥
@@ -145,7 +145,7 @@ layout: twocols
 <br/>
 
 
-<div class="-ml-10" bg-blue-800 z-50 bottom-0 relative>
+<div class="-ml-10">
 <v-clicks >
 
 - Content moderation @ social media company 🤬
@@ -189,16 +189,482 @@ hideInToc: true
 hideInToc: true
 ---
 
-# Why am I here?
+# Why am I [here]{.gradient-text}?
 
 
 <br/>
 
 <div flex items-center justify-center h-full m-5>
   
-## " To share my experience and inform about roles, projects, industries that <p inline bg-gradient-to-r from-rose to-indigo bg-clip-text text-transparent> you </p>  may be able to join in the field. To paint a picture of how <p inline bg-gradient-to-r from-rose to-indigo bg-clip-text text-transparent> data & AI </p> are applied in the industry, and share things I wish I knew when I was starting my journey. "
+## " To analyze the differences between [prototypes]{v-mark.red=1} and [production]{v-mark.circle.blue=2} applications, help us understand the path that a machine learning initiative takes from the [idea to production]{v-mark.box.yellow=3}, and look closely at the gap between [machine learning]{.gradient-text} and [operations]{.gradient-text} "
   
 </div>
+
+---
+layout: cover
+---
+
+# What is [ML]{v-mark.red=1}[Ops]{v-mark.circle.yellow=2}?
+
+---
+
+# What's in the [name]{.gradient-text}?
+
+<br/>
+
+::left::
+
+## Machine learning 🧠
+
+<br/>
+
+<v-clicks>
+
+- Experimentation
+- Data exploration
+- Modelling
+- Hyperparameter tuning
+- Evaluation
+
+</v-clicks>
+
+::right::
+
+## Operations ⚙️
+
+<br/>
+
+<v-clicks>
+
+- Availability
+- Scalability
+- Reproducibility*
+- Monitoring/Alerting
+- Automation
+
+</v-clicks>
+
+::bottom::
+
+## [✨ MLOps ✨]{.flex .justify-center .'-mt-20' v-click}
+
+---
+
+# DevOps vs. [MLOps]{.gradient-text}
+
+![](https://valohai.com/blog/difference-between-devops-and-mlops/mldevops.png){.rounded .shadow .bg-blue .scale-50 v-click .'-mt-20' .'-mb-25'}
+
+## [MLOps principles](https://ml-ops.org/content/mlops-principles):
+
+"[...] By codifying these practices, we hope to accelerate the adoption of ML/AI in software systems and fast delivery of intelligent software. In the following, we describe a set of important concepts in MLOps such as [Iterative-Incremental Development, Automation, Continuous Deployment, Versioning, Testing, Reproducibility, and Monitoring]{v-mark="{type:'highlight', color:'yellow', multiline:true}"}."
+
+---
+
+# DevOps vs. [MLOps]{.gradient-text} ?
+
+<br/>
+
+::left::
+
+## MLOps
+<br/>
+
+- Iterative-Incremental Development
+- [Automation]{v-mark.blue="'+1'"}
+- [Continuous Deployment]{v-mark.blue="'+1'"}
+- Versioning
+- [Testing]{v-mark.blue="'+1'"}
+- [Reproducibility]{v-mark.blue="'+1'" v-mark.box.red=6}
+- Monitoring
+
+::right::
+
+<v-click at='+2'>
+
+## vs. DevOps
+
+<br/>
+
+\+ Model
+
+\+ Features
+
+\+ Model
+
+</v-click>
+
+---
+
+# (MLOps in theory vs. [practice]{.gradient-text})
+
+[> “In theory, theory and practice are the same. In practice, they are not.” - Einstein]{v-click}
+
+<iframe src="https://arxiv.org/ftp/arxiv/papers/2205/2205.02302.pdf" w-full h-95 rounded shadow-lg v-click/>
+
+---
+layout: cover
+---
+
+# MLOps Illustrated
+## ML Lifecyle Recap
+
+---
+hideInToc: true
+---
+
+# Use case: [content moderation]{.gradient-text}
+
+
+<div flex flex-col items-center justify-center h-full>
+
+<div shadow-lg rounded-lg >  
+<img src="https://openai-labs-public-images-prod.azureedge.net/user-FpwegUavI965wXO1WB5HjsxZ/generations/generation-8Aew75oFXWIuddrQkA3j5b1U/image.webp" h-80 />
+  
+</div>
+
+`“pixel art angry face with symbols on mouth censoring profanity”` - <img src="https://static-00.iconduck.com/assets.00/openai-icon-2021x2048-4rpe5x7n.png" h-6 inline> DALL·E 2
+
+</div>
+
+---
+hideInToc: true
+---
+
+# What is [content moderation]{.gradient-text}?
+
+::left::
+
+<br/>
+
+<v-clicks depth=3>
+
+- You're the CEO of 10gag ( congrats! <span inline-block animate-ping>🎉</span> )
+	- (Like 9gag, but better) <img src="https://upload.wikimedia.org/wikipedia/fr/2/28/9gag_new_logo.png" rounded-full animate-spin inline h-4/>
+- Things haven't been so good lately 🫣
+- Many users are leaving your platform 😱
+  	- ($\approx$ churning!)
+- You have an idea! 💡
+	- Before users stop using the app, they probably don't post as much 📉
+    - <p inline bg-gradient-to-r from-rose to-indigo bg-clip-text text-transparent font-extrabold>Can we predict when people are gonna leave the app?</p>
+ 
+</v-clicks>
+
+::right::
+
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2E4MDlhODNoaXRpaG5wMWpwY2licHU0cHpnZXoxODg3Nm04ZGh1NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WMs6gvkp3jOPrkemVC/giphy.gif" rounded-lg shadow-lg h-100/>
+
+---
+hideInToc: true
+---
+
+# ML lifecycle & development (simplified)
+
+<div h-full flex flex-col justify-center items-center scale-250 my-20 space-y-5>
+
+<v-clicks>
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+    idea["`💡
+    Idea`"]
+    poc["`Proof-of-Concept 🤖`"]
+    mvp["`Minimal Viable Product 🦴`"]
+    prod["`Iterate 🚀`"]
+    
+    idea --> poc --> mvp --> prod
+```
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+    eda["`Exploratory Data Analysis 🔎`"]
+    model["`Modeling 📦`"]
+    eval["`Evaluation ⚖️`"]
+    deploy["`Deployment 🏗️`"]
+    monitor["`Monitoring 👀`"]
+    eval .-> model
+    eval .-> eda    
+    eda --> model --> eval --> deploy --> monitor
+```
+
+</v-clicks>
+</div>
+
+---
+
+# Exploratory data analysis (EDA)
+
+
+::left::
+
+<div class="-mr-23">
+<v-clicks>
+
+- Check that the data is available
+- Join data sources
+- Look for outliers and validate data correctness
+- Create new features
+- Tooling:
+  	- Python <carbon-logo-python/>
+    - SQL <carbon-db2-Database/>
+    - Jupyter notebooks <carbon-logo-jupyter/>
+  	- BI tooling/dashboards <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Power_bi_logo_black.svg/1024px-Power_bi_logo_black.svg.png" h-5 inline/>
+
+</v-clicks>
+
+<br/>
+  
+<v-clicks>
+<div>
+<carbon-arrow-right/> <p inline bg-gradient-to-r from-rose to-indigo bg-clip-text text-transparent font-extrabold> Share and validate findings with business stakeholders </p>
+</div>
+
+- "Users that don't log in are the ones that leave"
+- "Some users leave the platform because they are 'addicted'"
+
+</v-clicks>
+</div>
+
+::right::
+
+<div flex flex-col items-center justify-center h-full class="-mt-4">
+
+<v-click>
+<img src="https://openai-labs-public-images-prod.azureedge.net/user-FpwegUavI965wXO1WB5HjsxZ/generations/generation-bhu1ElLCd0z6CGaQX59a7rqB/image.webp" h-40 shadow-lg  rounded/>
+
+`“A data scientist at work as pixel art”`
+
+</v-click>
+
+<v-click>
+<img src="https://openai-labs-public-images-prod.azureedge.net/user-FpwegUavI965wXO1WB5HjsxZ/generations/generation-QGmoinDojSrwN667OwVyRgtn/image.webp" h-40 shadow-lg rounded/>
+
+`“A data analyst at work as pixel art”`
+</v-click>
+</div>
+
+<style>
+li:not(li:first-child) {
+  margin-top: 0;
+}
+</style>
+
+
+---
+
+# Modeling
+
+::left::
+
+<br/>
+<br/>
+
+<div class="-mr-23">
+<v-clicks>
+
+- Define data for training and testing
+- Deal with class imbalance
+- Define cost function
+- Try different models
+- Tune hyper parameters
+- Iterate on different architectures
+- Tooling:
+  	- Python <carbon-logo-python/>
+    - Jupyter notebooks <carbon-logo-jupyter/>
+
+</v-clicks>
+</div>
+
+::right::
+
+<div flex flex-col items-center justify-center h-full class="-mt-4">
+
+<v-click>
+<img src="https://openai-labs-public-images-prod.azureedge.net/user-FpwegUavI965wXO1WB5HjsxZ/generations/generation-bhu1ElLCd0z6CGaQX59a7rqB/image.webp" h-40 shadow-lg  rounded/>
+
+`“A data scientist at work as pixel art”`
+
+</v-click>
+
+<v-click>
+<img src="https://openai-labs-public-images-prod.azureedge.net/user-FpwegUavI965wXO1WB5HjsxZ/generations/generation-KaWyGPwUtMelJEo6mAYrAbfH/image.webp" h-40 shadow-lg rounded/>
+
+`“ml engineer pixel art”`
+</v-click>
+</div>
+
+<style>
+li:not(li:first-child) {
+  margin-top: 0;
+}
+</style>
+
+
+---
+
+# Evaluation
+
+::left::
+
+<div class="-mr-12">
+<v-clicks>
+
+- **Define the appropriate metrics and plots**
+- Compare model predictions with labeled data
+- Compute metrics and build plots
+- Assess feature imporance
+- Check for anomalies (better performance in subgroups, etc.)
+- Tooling:
+  	- Python <carbon-logo-python/>
+    - Jupyter notebooks <carbon-logo-jupyter/>
+
+</v-clicks>
+</div>
+
+  
+<v-clicks>
+<div>
+<carbon-arrow-right/> <p inline bg-gradient-to-r from-rose to-indigo bg-clip-text text-transparent font-extrabold> Assess with business whether model performance is acceptable </p>
+</div>
+
+- Should we try other models?
+- Should we build new features?
+- **How will these predictions be used?**
+
+
+</v-clicks>
+
+
+::right::
+
+<div flex flex-col items-center justify-center h-full class="-mt-4">
+
+<v-click>
+<img src="https://openai-labs-public-images-prod.azureedge.net/user-FpwegUavI965wXO1WB5HjsxZ/generations/generation-bhu1ElLCd0z6CGaQX59a7rqB/image.webp" h-40 shadow-lg  rounded/>
+
+`“A data scientist at work as pixel art”`
+  
+
+</v-click>
+
+<v-click>
+<img src="https://openai-labs-public-images-prod.azureedge.net/user-FpwegUavI965wXO1WB5HjsxZ/generations/generation-KaWyGPwUtMelJEo6mAYrAbfH/image.webp" h-40 shadow-lg rounded/>
+
+`“ml engineer pixel art”`
+</v-click>
+</div>
+
+<style>
+li:not(li:first-child) {
+  margin-top: 0;
+}
+</style>
+
+---
+
+# Deployment
+
+::left::
+
+> (Congrats! <span inline-block animate-ping>🎉</span> Many projects don't get this far)
+
+<br/>
+
+<div class="-mr-12">
+<v-clicks>
+
+- Event-driven or scheduled? (<carbon-arrow-right/> batch or real time?)
+- How much data?
+- Where should the predictions go?
+- Who should have access to it?
+- How can we just make predictions for the new data?
+- Define (re?)deployment strategy
+- Tooling:
+  	- Python <carbon-logo-python/>
+    - Cloud <carbon-IbmCloudHpc />
+  	- Orchestrators <img src="https://icon.icepanel.io/Technology/svg/Apache-Airflow.svg" inline h-5 grayscale/>
+  	- Web servers <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/420557i0319A4181851485A/image-size/original?v=v2&px=-1" inline h-5 grayscale/>
+  
+
+</v-clicks>
+</div>
+
+::right::
+
+<div flex flex-col items-center justify-center h-full class="-mt-4">
+
+<v-click>
+<img src="https://openai-labs-public-images-prod.azureedge.net/user-FpwegUavI965wXO1WB5HjsxZ/generations/generation-KaWyGPwUtMelJEo6mAYrAbfH/image.webp" h-40 shadow-lg rounded/>
+
+`“ml engineer pixel art”`
+</v-click>
+
+<v-click>
+<img src="https://openai-labs-public-images-prod.azureedge.net/user-FpwegUavI965wXO1WB5HjsxZ/generations/generation-aHp55zVrme5SmXxdWkdgYhCK/image.webp" h-40 shadow-lg  rounded/>
+
+`“mlops engineer pixel art”`
+</v-click>
+</div>
+
+<style>
+li:not(li:first-child) {
+  margin-top: 0;
+}
+</style>
+
+
+---
+
+# Monitoring
+
+::left::
+
+<div class="-mr-12">
+<v-clicks>
+
+- Will we know if the predictions were correct?
+- What metrics should we use?
+- Ensure that only "unbiased data" is monitored
+  	- We may "poison" the data by acting on the predictions ☠️
+- How often should the metrics be computed?
+- Set up automatic alerts
+- Set up automatic retraining
+- Fix operational issues and triage ML issues
+- Tooling:
+  	- Python <carbon-logo-python/>
+    - Cloud <carbon-IbmCloudHpc />
+  	- Orchestrators <img src="https://icon.icepanel.io/Technology/svg/Apache-Airflow.svg" inline h-5 grayscale/>
+  	- Monitoring services <img src="https://assets-global.website-files.com/6266b595eef18c96eef938e2/62b245d0f032adaa18124084_evidently_ai_logo_fi.png" inline h-5 grayscale/>
+  
+
+</v-clicks>
+</div>
+
+::right::
+
+<div flex flex-col items-center justify-center h-full class="-mt-4">
+
+<v-click>
+<img src="https://openai-labs-public-images-prod.azureedge.net/user-FpwegUavI965wXO1WB5HjsxZ/generations/generation-aHp55zVrme5SmXxdWkdgYhCK/image.webp" h-40 shadow-lg  rounded/>
+
+`“mlops engineer pixel art”`
+</v-click>
+
+<v-click>
+<img src="https://openai-labs-public-images-prod.azureedge.net/user-FpwegUavI965wXO1WB5HjsxZ/generations/generation-IiIHE6KT2n9pUDekqGTsEJlr/image.webp" h-40 shadow-lg rounded/>
+
+
+`“data and cloud engineer pixel art”`
+</v-click>
+</div>
+
+<style>
+li:not(li:first-child) {
+  margin-top: 0;
+}
+</style>
+---
+
 
 ---
 layout: iframe
@@ -206,5 +672,15 @@ layout: iframe
 # the web page source
 url: https://sli.dev/custom/config-unocss
 ---
-
-# Hi
+<!--
+1. mlops definitions - operations?
+2. ideal vs practical mlops
+3. ML Lifecycle
+4. use case, explained - content moderation
+5. batch vs. real time
+6. batch
+7. real time
+8. latency
+9. examples
+10. exercise/live demo
+11. -->

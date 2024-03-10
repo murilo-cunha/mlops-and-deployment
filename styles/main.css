@@ -1,0 +1,12 @@
+.gradient-text {
+  --uno: 'bg-gradient-to-r from-rose to-indigo bg-clip-text text-transparent';
+}
+
+.slidev-page {
+  /* https://github.com/slidevjs/slidev/commit/c820e23b10581191a42bbf51c04bfd2caa49077a */
+  overflow: visible !important;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
