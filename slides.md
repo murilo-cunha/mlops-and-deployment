@@ -3,7 +3,7 @@ theme: slidev-theme-dataroots
 layout: intro
 lineNumbers: false
 themeConfig:
-  title: MLOps
+  title: MLOps - Bringing ideas to production 🚀
   github: murilo-cunha
   twitter: _murilocunha
   linkedin: in/murilo-cunha
@@ -52,7 +52,6 @@ li:not(li:first-child) {
   margin-top: 0;
 }
 </style>
-
 
 ---
 layout: presenter
@@ -196,12 +195,115 @@ hideInToc: true
 
 <div flex items-center justify-center h-full m-5>
   
-## " To analyze the differences between [prototypes]{v-mark.red=1} and [production]{v-mark.circle.blue=2} applications, help us understand the path that a machine learning initiative takes from the [idea to production]{v-mark.box.yellow=3}, and look closely at the gap between [machine learning]{.gradient-text} and [operations]{.gradient-text} "
+## " To help us understand what it takes for a machine learning project takes to go from [idea to production]{v-mark.box.yellow=3}, looking closely at the differences between [machine learning]{.gradient-text} and [operations]{.gradient-text} "
   
 </div>
 
 ---
 layout: cover
+title: What is  MLOps?
+---
+
+# Why MLOps?
+
+---
+
+# Use case: [content moderation]{.gradient-text}
+
+
+<div flex flex-col items-center justify-center h-full>
+
+<div shadow-lg rounded-lg >  
+<img src="https://openai-labs-public-images-prod.azureedge.net/user-FpwegUavI965wXO1WB5HjsxZ/generations/generation-8Aew75oFXWIuddrQkA3j5b1U/image.webp" h-80 />
+  
+</div>
+
+`“pixel art angry face with symbols on mouth censoring profanity”` - <img src="https://static-00.iconduck.com/assets.00/openai-icon-2021x2048-4rpe5x7n.png" h-6 inline> DALL·E 2
+
+</div>
+
+---
+hideInToc: true
+---
+
+# What is [content moderation]{.gradient-text}?
+
+::left::
+
+<br/>
+
+<v-clicks depth=3>
+
+- You're the CEO of 10gag ( congrats! <span inline-block animate-ping>🎉</span> )
+	- (Like 9gag, but better) <img src="https://upload.wikimedia.org/wikipedia/fr/2/28/9gag_new_logo.png" rounded-full animate-spin inline h-4/>
+- Things haven't been so good lately 🫣
+- Some people are leaving nasty comments 🤬
+- You have an idea! 💡
+	- You can probably detect these comments, and remove them from the platform
+    - <p inline bg-gradient-to-r from-rose to-indigo bg-clip-text text-transparent font-extrabold>How well can we identify these comments using machine learning?</p>
+ 
+</v-clicks>
+
+::right::
+
+![](https://media.giphy.com/media/3Fkw8DCq4eUxp31E4n/giphy.gif){.rounded-lg .shadow-lg .scale-80}
+
+---
+
+# So you build a [model]{.gradient-text}...
+
+<br/>
+<br/>
+
+::right::
+
+<br/>
+
+![](http://jalammar.github.io/images/gpt3/10-gpt3-fine-tuning.gif){.rounded .shadow-xl .object-contain v-click=1}
+
+::left::
+
+
+<v-clicks at=2>
+
+👨‍💼 "How long will it take to go though 100 posts? How can we make it faster?"
+
+👷‍♀️ "How can we make sure the model scales?"
+
+👷‍♂️ "What packages did you use?"
+
+😡 "Why is it removing my posts?"
+
+👩‍🔬 "What models did you already try?"
+
+🕵️ "What data was used to train this model?"
+
+</v-clicks>
+
+::bottom::
+
+<v-click at=8>
+ 
+<carbon-arrow-right /> [MLOps decreases the burden of deploying ML systems by following best practices]{v-mark.highlight.yellow=8}
+
+</v-click>
+
+---
+
+# Real life [testimonials]{.gradient-text}
+
+
+# [TODO]{.bg-red .flex-center .h-100}
+
+“At this point, everybody does what they like, there is little to no standardisation. Since there are little to no best practices, the current platform contains the largest common denominator of a lot of heterogeneous projects. This causes a lot of burden in maintaining these projects”
+
+“For quite some time, the focus was on more traditional Business Intelligence and Data Engineering. More recently we have seen the focus shifted more towards Advanced Analytics in the form of some scattered initiatives and products, which in turn lead to little success on these.”
+
+“While I love our Data Science team, the code they write is not at all up to standards in comparison to what we normally push into production. This puts a heavy burden on the Data Engineering team to rewrite and refactor this. At the same time the Data Science team is often unhappy, because this refactoring process tends to introduce mistakes or misunderstandings.”
+
+---
+layout: cover
+title: What is  MLOps?
 ---
 
 # What is [ML]{v-mark.red=1}[Ops]{v-mark.circle.yellow=2}?
@@ -238,7 +340,7 @@ layout: cover
 
 - Availability
 - Scalability
-- Reproducibility*
+- Reproducibility
 - Monitoring/Alerting
 - Automation
 
@@ -295,11 +397,60 @@ layout: cover
 
 ---
 
+# So... what is it?
+
+<br/>
+
+<div flex flex-col items-center justify-center h-full mx-5>
+  
+## “The [level]{v-mark.circle.blue=1} of automation of these steps defines the maturity of the ML process, which [reflects the velocity of training new models given new data or training new models given new implementations]{v-mark="{type:'highlight', color:'yellow', multiline:true, at:2}"}. The following sections describe three levels of MLOps, starting from the most common level, which involves no automation, up to automating both ML and CI/CD pipelines.”
+
+</div>
+
+<div flex justify-end w-full class='-mx-10'>
+
+## [- Google](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
+
+</div>
+
+---
+
 # (MLOps in theory vs. [practice]{.gradient-text})
 
 [> “In theory, theory and practice are the same. In practice, they are not.” - Einstein]{v-click}
 
 <iframe src="https://arxiv.org/ftp/arxiv/papers/2205/2205.02302.pdf" w-full h-95 rounded shadow-lg v-click/>
+
+
+---
+
+# Pop Quiz 💥
+
+## For each of these challenges, which ones are related to [ML]{v-mark.highlight.red} or [Ops]{v-mark.highlight.cyan} ?
+
+<br/>
+
+::left::
+
+- [Locality of the data (distributional shift)]{v-mark.highlight.red=1}
+- [Models and experiments are not properly tracked]{v-mark.highlight.cyan=2}
+- [Model decay]{v-mark.highlight.red=3}
+- [Changing business objectives]{v-mark.highlight.red=4}
+- [Models monitoring and (re)trainining]{v-mark.highlight.cyan=5}
+- [Retraining]{v-mark.highlight.red=6}
+- [Data quality]{v-mark.highlight.red=7}
+
+
+
+
+::right::
+
+- [Consistent project structure]{v-mark.highlight.cyan=8}
+- [Data availability]{v-mark.highlight.red=9}
+- [Code and dependencies tracking]{v-mark.highlight.cyan=10}
+- [Auditability and regulations - reproducibility and explainability]{v-mark.highlight.cyan=11}
+- [Wrong initial assumptions (problem definition)]{v-mark.highlight.red=12}
+- [Deploy model systems(not just one off solutions)]{v-mark.highlight.cyan=13}
 
 ---
 layout: cover
@@ -312,46 +463,7 @@ layout: cover
 hideInToc: true
 ---
 
-# Use case: [content moderation]{.gradient-text}
 
-
-<div flex flex-col items-center justify-center h-full>
-
-<div shadow-lg rounded-lg >  
-<img src="https://openai-labs-public-images-prod.azureedge.net/user-FpwegUavI965wXO1WB5HjsxZ/generations/generation-8Aew75oFXWIuddrQkA3j5b1U/image.webp" h-80 />
-  
-</div>
-
-`“pixel art angry face with symbols on mouth censoring profanity”` - <img src="https://static-00.iconduck.com/assets.00/openai-icon-2021x2048-4rpe5x7n.png" h-6 inline> DALL·E 2
-
-</div>
-
----
-hideInToc: true
----
-
-# What is [content moderation]{.gradient-text}?
-
-::left::
-
-<br/>
-
-<v-clicks depth=3>
-
-- You're the CEO of 10gag ( congrats! <span inline-block animate-ping>🎉</span> )
-	- (Like 9gag, but better) <img src="https://upload.wikimedia.org/wikipedia/fr/2/28/9gag_new_logo.png" rounded-full animate-spin inline h-4/>
-- Things haven't been so good lately 🫣
-- Many users are leaving your platform 😱
-  	- ($\approx$ churning!)
-- You have an idea! 💡
-	- Before users stop using the app, they probably don't post as much 📉
-    - <p inline bg-gradient-to-r from-rose to-indigo bg-clip-text text-transparent font-extrabold>Can we predict when people are gonna leave the app?</p>
- 
-</v-clicks>
-
-::right::
-
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2E4MDlhODNoaXRpaG5wMWpwY2licHU0cHpnZXoxODg3Nm04ZGh1NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WMs6gvkp3jOPrkemVC/giphy.gif" rounded-lg shadow-lg h-100/>
 
 ---
 hideInToc: true
