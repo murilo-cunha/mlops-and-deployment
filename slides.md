@@ -292,21 +292,35 @@ hideInToc: true
 
 # Real life [testimonials]{.gradient-text}
 
-<div  border-5 p-2 my-1 rounded-lg bg-[#445ba7]>
+<v-clicks>
+<div border-5 border-sky-50 shadow p-2 my-4 rounded-lg bg-sky-50>
 
-### “At this point, everybody does what they like, there is little to no standardisation. Since there are little to no best practices, the current platform contains the largest common denominator of a lot of heterogeneous projects. This causes a lot of burden in maintaining these projects”
-
-</div>
-<div  border-5 p-2 my-1 rounded-lg >
-
-### “For quite some time, the focus was on more traditional Business Intelligence and Data Engineering. More recently we have seen the focus shifted more towards Advanced Analytics in the form of some scattered initiatives and products, which in turn lead to little success on these.”
+### “At this point, everybody does what they like, there is [little to no standardisation]{v-mark.red=1}. Since there are little to [no best practices]{v-mark.box.yellow=1}, the current platform contains the largest common denominator of a lot of heterogeneous projects. This causes a lot of [burden in maintaining]{v-mark.circle.pink=1} these projects”
 
 </div>
-<div  border-5 p-2 my-1 rounded-lg >
+<div border-5 border-sky-50 shadow p-2 my-4 rounded-lg bg-sky-50>
 
-### “While I love our Data Science team, the code they write is not at all up to standards in comparison to what we normally push into production. This puts a heavy burden on the Data Engineering team to rewrite and refactor this. At the same time the Data Science team is often unhappy, because this refactoring process tends to introduce mistakes or misunderstandings.”
+### “For quite some time, the focus was on more traditional Business Intelligence and Data Engineering. More recently we have seen the [focus shifted more towards Advanced Analytics]{v-mark.highlight.yellow=2} in the form of some scattered initiatives and products, which in turn lead to [little success]{v-mark.circle.red=2} on these.”
 
 </div>
+<div border-5 border-sky-50 shadow p-2 my-4 rounded-lg bg-sky-50>
+
+### “While I love our Data Science team, the [code they write is not at all up to standards]{v-mark.box.red=3} in comparison to what we normally push into production. This puts a [heavy burden]{v-mark.circle.yellow=3} on the Data Engineering team to [rewrite and refactor]{v-mark.highlight.yellow=3} this. At the same time the Data Science team is often [unhappy]{v-mark.blue=3}, because this refactoring process tends to introduce [mistakes or misunderstandings]{v-mark.highlight.cyan=3}.”
+
+</div>
+</v-clicks>
+
+<v-click>
+
+### <carbon-arrow-right/> When we talk MLOps we often talk deployment and/or [deployed models]{.gradient-text}
+
+</v-click>
+
+<style>
+  h3 {
+    @apply text-base !important;
+  }
+</style>
 
 ---
 layout: cover
@@ -432,28 +446,28 @@ line-height: 1.25rem; /* 20px */
 
 # Pop Quiz 💥
 
-## For each of these challenges, which ones are related to [ML]{v-mark.highlight.red} or [Ops]{v-mark.highlight.cyan} ?
+## For each of these challenges, which ones are related to [ML]{v-mark.highlight.red=1} or [Ops]{v-mark.highlight.cyan=1} ?
 
 <br/>
 
 ::left::
 
-- [Locality of the data (distributional shift)]{v-mark.highlight.red=1}
 - [Models and experiments are not properly tracked]{v-mark.highlight.cyan=2}
 - [Model decay]{v-mark.highlight.red=3}
 - [Changing business objectives]{v-mark.highlight.red=4}
 - [Models monitoring and (re)trainining]{v-mark.highlight.cyan=5}
 - [Retraining]{v-mark.highlight.red=6}
 - [Data quality]{v-mark.highlight.red=7}
+- [Consistent project structure]{v-mark.highlight.cyan=8}
 
 ::right::
 
-- [Consistent project structure]{v-mark.highlight.cyan=8}
 - [Data availability]{v-mark.highlight.red=9}
 - [Code and dependencies tracking]{v-mark.highlight.cyan=10}
 - [Auditability and regulations - reproducibility and explainability]{v-mark.highlight.cyan=11}
 - [Wrong initial assumptions (problem definition)]{v-mark.highlight.red=12}
-- [Deploy model systems(not just one off solutions)]{v-mark.highlight.cyan=13}
+- [Locality of the data (distributional shift)]{v-mark.highlight.red=13}
+- [Deploy model systems(not just one off solutions)]{v-mark.highlight.cyan=14}
 
 ---
 layout: cover
