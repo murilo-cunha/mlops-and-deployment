@@ -292,14 +292,21 @@ hideInToc: true
 
 # Real life [testimonials]{.gradient-text}
 
+<div  border-5 p-2 my-1 rounded-lg bg-[#445ba7]>
 
-# [TODO]{.bg-red .flex-center .h-100}
+### “At this point, everybody does what they like, there is little to no standardisation. Since there are little to no best practices, the current platform contains the largest common denominator of a lot of heterogeneous projects. This causes a lot of burden in maintaining these projects”
 
-“At this point, everybody does what they like, there is little to no standardisation. Since there are little to no best practices, the current platform contains the largest common denominator of a lot of heterogeneous projects. This causes a lot of burden in maintaining these projects”
+</div>
+<div  border-5 p-2 my-1 rounded-lg >
 
-“For quite some time, the focus was on more traditional Business Intelligence and Data Engineering. More recently we have seen the focus shifted more towards Advanced Analytics in the form of some scattered initiatives and products, which in turn lead to little success on these.”
+### “For quite some time, the focus was on more traditional Business Intelligence and Data Engineering. More recently we have seen the focus shifted more towards Advanced Analytics in the form of some scattered initiatives and products, which in turn lead to little success on these.”
 
-“While I love our Data Science team, the code they write is not at all up to standards in comparison to what we normally push into production. This puts a heavy burden on the Data Engineering team to rewrite and refactor this. At the same time the Data Science team is often unhappy, because this refactoring process tends to introduce mistakes or misunderstandings.”
+</div>
+<div  border-5 p-2 my-1 rounded-lg >
+
+### “While I love our Data Science team, the code they write is not at all up to standards in comparison to what we normally push into production. This puts a heavy burden on the Data Engineering team to rewrite and refactor this. At the same time the Data Science team is often unhappy, because this refactoring process tends to introduce mistakes or misunderstandings.”
+
+</div>
 
 ---
 layout: cover
