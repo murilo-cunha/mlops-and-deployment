@@ -195,7 +195,7 @@ hideInToc: true
 
 <div flex items-center justify-center h-full m-5>
   
-## " To help us understand what it takes for a machine learning project takes to go from [idea to production]{v-mark.box.yellow=3}, looking closely at the differences between [machine learning]{.gradient-text} and [operations]{.gradient-text} "
+## " To help us understand what it takes for a machine learning project takes to go from [idea to production]{v-mark.box.yellow=1}, looking closely at the differences between [machine learning]{.gradient-text} and [operations]{.gradient-text} "
   
 </div>
 
@@ -356,44 +356,43 @@ title: What is  MLOps?
 
 ![](https://valohai.com/blog/difference-between-devops-and-mlops/mldevops.png){.rounded .shadow .bg-blue .scale-50 v-click .'-mt-20' .'-mb-25'}
 
+
+<v-click>
+<div>
+
 ## [MLOps principles](https://ml-ops.org/content/mlops-principles):
 
-"[...] By codifying these practices, we hope to accelerate the adoption of ML/AI in software systems and fast delivery of intelligent software. In the following, we describe a set of important concepts in MLOps such as [Iterative-Incremental Development, Automation, Continuous Deployment, Versioning, Testing, Reproducibility, and Monitoring]{v-mark="{type:'highlight', color:'yellow', multiline:true}"}."
+"[...] By codifying these practices, we hope to accelerate the adoption of ML/AI in software systems and fast delivery of intelligent software. In the following, we describe a set of important concepts in MLOps such as [Iterative-Incremental Development, Automation, Continuous Deployment, Versioning, Testing, Reproducibility, and Monitoring]{v-mark="{type:'highlight', color:'yellow', multiline:true, at:2}"}."
+
+</div>
+</v-click>
 
 ---
 
-# DevOps vs. [MLOps]{.gradient-text} ?
+# Real life [testimonials]{.gradient-text}
 
-<br/>
+<div border-5 border-sky-50 p-2 rounded-lg bg-sky-50 shadow>
 
-::left::
+### “At this point, everybody does what they like, there is little to no standardisation. Since there are little to no best practices, the current platform contains the largest common denominator of a lot of heterogeneous projects. This causes a lot of burden in maintaining these projects”
 
-## MLOps
-<br/>
+</div>
+<div border-5 border-sky-50 p-2 rounded-lg bg-sky-50 shadow>
 
-- Iterative-Incremental Development
-- [Automation]{v-mark.blue="'+1'"}
-- [Continuous Deployment]{v-mark.blue="'+1'"}
-- Versioning
-- [Testing]{v-mark.blue="'+1'"}
-- [Reproducibility]{v-mark.blue="'+1'" v-mark.box.red=6}
-- Monitoring
+### “For quite some time, the focus was on more traditional Business Intelligence and Data Engineering. More recently we have seen the focus shifted more towards Advanced Analytics in the form of some scattered initiatives and products, which in turn lead to little success on these.”
 
-::right::
+</div>
+<div border-5 border-sky-50 p-2 rounded-lg bg-sky-50 shadow>
 
-<v-click at='+2'>
+### “While I love our Data Science team, the code they write is not at all up to standards in comparison to what we normally push into production. This puts a heavy burden on the Data Engineering team to rewrite and refactor this. At the same time the Data Science team is often unhappy, because this refactoring process tends to introduce mistakes or misunderstandings.”
 
-## vs. DevOps
+</div>
 
-<br/>
-
-\+ Model
-
-\+ Features
-
-\+ Model
-
-</v-click>
+<style>
+h3 {
+font-size: 0.875rem; /* 14px */
+line-height: 1.25rem; /* 20px */
+}
+</style>
 
 ---
 
@@ -439,9 +438,6 @@ title: What is  MLOps?
 - [Models monitoring and (re)trainining]{v-mark.highlight.cyan=5}
 - [Retraining]{v-mark.highlight.red=6}
 - [Data quality]{v-mark.highlight.red=7}
-
-
-
 
 ::right::
 
