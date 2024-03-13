@@ -300,7 +300,7 @@ hideInToc: true
 </div>
 <div border-5 border-sky-50 shadow p-2 my-4 rounded-lg bg-sky-50>
 
-### “For quite some time, the focus was on more traditional Business Intelligence and Data Engineering. More recently we have seen the [focus shifted more towards Advanced Analytics]{v-mark.highlight.yellow=2} in the form of some scattered initiatives and products, which in turn lead to [little success]{v-mark.circle.red=2} on these.”
+### “For quite some time, the focus was on more traditional Business Intelligence and Data Engineering. More recently we have seen the focus shifted more towards Advanced Analytics in the form of some scattered initiatives and products, which in turn lead to [little success]{v-mark.highlight.yellow=2} on these.”
 
 </div>
 <div border-5 border-sky-50 shadow p-2 my-4 rounded-lg bg-sky-50>
@@ -432,18 +432,17 @@ title: What is  MLOps?
 - [Model decay]{v-mark.highlight.red=3}
 - [Changing business objectives]{v-mark.highlight.red=4}
 - [Models monitoring and (re)trainining]{v-mark.highlight.cyan=5}
-- [Retraining]{v-mark.highlight.red=6}
-- [Data quality]{v-mark.highlight.red=7}
-- [Consistent project structure]{v-mark.highlight.cyan=8}
+- [Data quality]{v-mark.highlight.red=6}
+- [Consistent project structure]{v-mark.highlight.cyan=7}
 
 ::right::
 
-- [Data availability]{v-mark.highlight.red=9}
-- [Code and dependencies tracking]{v-mark.highlight.cyan=10}
-- [Auditability and regulations - reproducibility and explainability]{v-mark.highlight.cyan=11}
-- [Wrong initial assumptions (problem definition)]{v-mark.highlight.red=12}
-- [Locality of the data (distributional shift)]{v-mark.highlight.red=13}
-- [Deploy model systems(not just one off solutions)]{v-mark.highlight.cyan=14}
+- [Data availability]{v-mark.highlight.red=8}
+- [Code and dependencies tracking]{v-mark.highlight.cyan=9}
+- [Auditability and regulations - reproducibility and explainability]{v-mark.highlight.cyan=10}
+- [Wrong initial assumptions (problem definition)]{v-mark.highlight.red=11}
+- [Locality of the data (distributional shift)]{v-mark.highlight.red=12}
+- [Deploy model systems(not just one off solutions)]{v-mark.highlight.cyan=13}
 
 ---
 layout: cover
@@ -611,7 +610,7 @@ layout: cover
 
 <v-clicks>
 
-## Batch
+## Batch 🍪
 
 $\approx$ scheduled
 
@@ -642,7 +641,7 @@ $\approx$ scheduled
 
 <v-clicks>
 
-## Real time
+## Real time 👟
 
 $\approx$ event-driven
 
@@ -684,6 +683,32 @@ img {
 </style>
 
 ---
+layout: cover
+---
+
+# Demo
+
+---
+
+# The tech
+
+<br/>
+<br/>
+
+<v-click>
+<div flex justify-center items-center space-x-10 h-80 p-5>
+
+[![](https://duckdb.org/images/logo-dl/DuckDB_Logo.png)](https://duckdb.org/)
+
+[![](https://mma.prnewswire.com/media/1946939/MotherDuck_Logo.jpg?p=twitter)](https://motherduck.com/)
+
+<a href="https://modal.com/">
+
+![](https://modal.com/assets/social-image.jpg){.rounded-xl.h-40.w-190.object-cover.aspect-video}
+
+</a>
+</div>
+</v-click>
 
 ---
 
