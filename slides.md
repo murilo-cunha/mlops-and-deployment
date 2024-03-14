@@ -839,34 +839,33 @@ hideInToc: true
 # Latency?
 
 <div h-full w-full flex justify-center items-center>
-  <img src="/images/latency.png" rounded shadow h-92/>
+  <img src="/static/latency.png" rounded shadow h-92/>
 </div>
 
 ---
-clicks: 4
 hideInToc: true
 ---
 
 # Latency?
-
 <carbon-arrow-right/> why?
-<br/>
-<br/>
 
-<v-click at=3>
+<v-click at=5>
 <div w-full h-70 absolute flex justify-center items-center>
-  <div bg-slate-200 z-1 p-10 shadow-md rounded-lg text-center>
-  compute available ⚖️ compute required
+<div bg-slate-200 z-1 p-10 shadow-md rounded-lg text-center scale-120>
 
-  </div>
+### compute available ⚖️ compute required
+	
+</div>
 </div>
 </v-click>
 
 ::left::
-<v-click at=0>
+
+<v-click>
 <div flex justify-center items-center >
-<div class="select" v-animattr :length="3">
 <div p-10>
+
+<div v-mark="{at:4, color:'red', brackets:['left','right'], type: 'bracket'}">
 
 ## ML
 
@@ -875,12 +874,15 @@ hideInToc: true
 - Compute
 - Complexity
 - Size
+</div>
 
-</div></div></div>
- </v-click>
+</div>
+</div>
+</v-click>
 
 ::right::
-<v-click at=1>
+
+<v-click>
 <div flex justify-center items-center>
 <div p-10>
 
@@ -895,17 +897,18 @@ hideInToc: true
 </div>
 </v-click>
 
-<style>
-.select {
-    border-width: 0px;
-	transition: border 100ms ease;
-}
+::bottom::
 
-.select[data-animattr~="2"] {
-    border-width: 4px;
-}
-</style>
+<v-click>
+<div flex w-full justify-center items-center>
 
+```mermaid
+graph LR
+    bread("🥖") <--> bike("🚴‍♀️") <--> person("🥸")
+```
+
+</div>
+</v-click>
 
 ---
 hideInToc: true
@@ -913,15 +916,19 @@ hideInToc: true
 
 # Latency?
 
-<div flex justify-center items-center h-80 p-20>
-<div>
-“Latency is a measurement in Machine Learning to determine the performance of various models for a specific application. Latency refers to the time taken to process one unit of data provided only one unit of data is processed at a time.”
 
 <br/>
-<div text-right w-full>
-<carbon-arrow-right/> OpenGenus
+
+<div flex flex-col items-center justify-center h-full mx-5>
+  
+## “Latency is a [measurement]{v-mark.red="'+1'"} in Machine Learning to determine the performance of various models for a specific application. Latency refers to the [time taken to process one unit of data provided only one unit of data is processed at a time]{v-mark="{type:'highlight', color:'yellow', multiline:true, at:'+1'}"}.”
+
 </div>
-</div>
+
+<div flex justify-end w-full class='-mx-10'>
+
+## [- OpenGenus](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
+
 </div>
 
 ---
