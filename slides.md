@@ -423,8 +423,6 @@ title: What is  MLOps?
 </div>
 </v-click>
 
----
-
 
 ---
 
@@ -927,7 +925,7 @@ hideInToc: true
 
 <div flex justify-end w-full class='-mx-10'>
 
-## [- OpenGenus](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
+## [- OpenGenus](https://iq.opengenus.org/latency-ml/)
 
 </div>
 
@@ -935,25 +933,24 @@ hideInToc: true
 hideInToc: true
 ---
 
-# Latency - demo
+# Latency [in action]{.gradient-text}
 
 ::left::
 
-- [Stable LM](https://github.com/Stability-AI/StableLM) from [Stability AI](https://stability.ai/)
-- "ChatGPT-like"
+- [Stable LM](https://github.com/Stability-AI/StableLM) from [Stability AI](https://stability.ai/) 
+
+<carbon-arrow-right/> "ChatGPT-like"
 - Prompts:
 	- `Generate a list of the 10 most beautiful cities in the world.`
 	- `How can I tell apart female and male red cardinals?`
 
 ```bash
-rootsacademy-model-latency
-├── README.md
+rootsacademy-model-latency/
+├── ...
 ├── common
 │   ├── __init__.py
 │   └── utils.py
-├── presentation
 ├── pyproject.toml
-├── requirements.txt
 └── scripts
     ├── local.py
     └── remote.py
@@ -989,12 +986,11 @@ Processing and memory
 hideInToc: true
 ---
 
-# Latency - demo
+# Latency [in action]{.gradient-text}
 
 <br/>
 
- <Asciinema src="casts/local.cast" :playerProps="{speed: 2, idleTimeLimit: 2, fit: false, terminalFontFamily: 'MesloLGS NF' }" />
-
+<iframe src="https://asciinema.org/a/8PRQDcwFUTLXQ2WQYqczGV5IY/iframe?speed=2&idleTimeLimit=3" p-5 w-full h-105/>
 
 ---
 
@@ -1005,7 +1001,7 @@ hideInToc: true
 
 <v-click>
 <div flex justify-center items-center>
-<img src="/images/scale.png" h-60 rounded-lg shadow/>
+<img src="/static/scale.png" h-60 rounded-lg shadow/>
 </div>
 </v-click>
 
@@ -1013,7 +1009,7 @@ hideInToc: true
 
 <v-click>
 <div flex justify-center items-center>
-<img src="https://www.webairy.com/wp-content/uploads/2019/07/hvsv.jpg" rounded-lg shadow/>
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*Gt1YW-S176ziLTteYKutvg.gif" rounded-lg shadow/>
 </div>
 </v-click>
 
@@ -1044,41 +1040,73 @@ High model complexity → scale up
 hideInToc: true
 ---
 
-# Latency - what can we do about it?
+# Each scaling strategies has its [trade offs]{.gradient-text}
 
 <br/>
-<br/>
-<br/>
+
 
 ::left::
 
-<div w-full flex items-center bg-slate-800 rounded justify-center>
-<img src="https://modal.com/_app/immutable/assets/logotype.bb8cd083.svg"  rounded h-48 place-self-center/>
-</div>
+<v-clicks>
 
-::right::
+- Cloud makes it easy to **scale vertically**
+- Higher overhead to manage clusters (**horizontal scaling**)
+- **Vertical scaling** has limits
+- [Serverless machines]{.gradient-text.font-bold} can help optimize costs
+- **Horizontal scaling** can be autoscaled
+- Both may be cost efficient, depending on the setup
+
+</v-clicks>
 
 <div w-full flex items-center rounded justify-center>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amazon_Lambda_architecture_logo.svg/1200px-Amazon_Lambda_architecture_logo.svg.png"  rounded h-48/>
+<v-clicks>
+<img src="https://modal.com/assets/social-image.jpg"  rounded h-35 m-3/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amazon_Lambda_architecture_logo.svg/1200px-Amazon_Lambda_architecture_logo.svg.png" rounded h-35 m-3/>
+</v-clicks>
 </div>
 
+::right::
 
----
-hideInToc: true
----
+<div flex justify-center items-center>
+<br/>
+<v-click>
 
-# Latency - what can we do about it?
+![](https://i.pinimg.com/originals/d2/ba/9b/d2ba9b46f45482aa51e5868098d3755e.gif){.rounded-lg.h-60.shadow}
+
+</v-click>
+</div>
 
 <br/>
 
-<Asciinema src="casts/remote.cast" :playerProps="{speed: 3, idleTimeLimit: 2, fit: false, terminalFontFamily: 'MesloLGS NF' }" />
+<v-click>
+<div>
 
+### <carbon-arrow-right/> [What's the main cause of your latency?]{v-mark="{type:'highlight', color:'yellow', multiline:true, at:'+0'}"}
+
+</div>
+</v-click>
+
+<style>
+li {
+  margin-top: 0 !important;
+}
+</style>
 
 ---
 hideInToc: true
 ---
 
-# Latency - what can we do about it?
+# Scaling [in action]{.gradient-text}
+
+<br/>
+
+<iframe src="https://asciinema.org/a/x5zX5jFKYtFVzg0FZXL9lW9Mo/iframe?speed=3&idleTimeLimit=3" p-5 w-full h-105/>
+
+---
+hideInToc: true
+---
+
+# Latency [solved]{.gradient-text}?
 
 <br/>
 <br/>
@@ -1086,7 +1114,7 @@ hideInToc: true
 ::left::
 <v-click>
 <div flex justify-center items-center>
-<img src="/images/stonks.png" h-60 rounded-lg shadow/>
+<img src="/static/stonks.png" h-80 rounded-lg shadow/>
 </div>
 </v-click>
 
@@ -1094,16 +1122,15 @@ hideInToc: true
 
 <v-click>
 <div flex justify-center items-center>
-<img src="/images/panic.png" h-60 rounded-sm shadow/>
+<img src="/static/panic.png" h-80 rounded-sm shadow/>
 </div>
 </v-click>
-
 
 ---
 hideInToc: true
 ---
 
-# Latency - what can we do about it?
+# Instead of growing, we can [shrink]{.gradient-text}
 
 <br/>
 
@@ -1113,7 +1140,7 @@ hideInToc: true
 <img src="https://user-images.githubusercontent.com/1991296/230134379-7181e485-c521-4d23-a0d6-f7b3b61ba524.png"  rounded place-self-center h-32/>
 </div>
 <br/>
-<iframe w-full h-60 rounded shadow src="https://ggml.ai/" />
+<iframe  bg-slate-50 p-2 w-full h-60 rounded shadow src="https://ggml.ai/" />
 
 ::right::
 
@@ -1121,34 +1148,29 @@ hideInToc: true
 <img src="https://user-images.githubusercontent.com/1991296/225259817-1682cf61-7f10-414d-ad74-a0a1bbe963d4.png"  rounded shadow/>
 </div>
 
-
 ---
 hideInToc: true
 ---
 
-# Latency - what can we do about it?
+# Quantization [in action]{.gradient-text}
 
-## pt.2
 
-<br/>
-
-<Asciinema src="casts/llama.cast" :playerProps="{speed: 2, idleTimeLimit: 2, fit: false, terminalFontFamily: 'MesloLGS NF' }" />
-
+<iframe src="https://asciinema.org/a/iphbEPhRNdS01C2aupWDj5VMM/iframe?speed=2&idleTimeLimit=3" p-5 w-full h-115/>
 
 ---
 
 # Edge ML
 
-<div flex justify-center items-center h-60 p-20>
-<div>
-“Edge machine learning (edge ML) is the process of running machine learning algorithms on computing devices at the periphery of a network to make decisions and predictions as close as possible to the originating source of data.”
+<div flex flex-col items-center justify-center class='h-2/3' mx-5>
+  
+## “Edge machine learning (edge ML) is the process of running machine learning algorithms on computing devices at the periphery of a network to make decisions and predictions as close as possible to the originating source of data.”
+</div>
+<div flex justify-end w-full class='-mx-10'>
 
-<br/>
-<div text-right w-full>
-<carbon-arrow-right/> Edge Impulse
+## [- Edge Impulse](https://docs.edgeimpulse.com/docs/concepts/what-is-edge-machine-learning)
+
 </div>
-</div>
-</div>
+
 
 <div flex justify-center items-center>
   <carbon-augmented-reality text-8xl mx-10/>
