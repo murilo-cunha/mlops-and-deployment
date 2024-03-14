@@ -237,7 +237,7 @@ hideInToc: true
 - You're the CEO of 10gag ( congrats! <span inline-block animate-ping>🎉</span> )
 	- (Like 9gag, but better) <img src="https://upload.wikimedia.org/wikipedia/fr/2/28/9gag_new_logo.png" rounded-full animate-spin inline h-4/>
 - Things haven't been so good lately 🫣
-- Some people are leaving nasty comments 🤬
+- You have some trolls leaving nasty comments 🤬
 - You have an idea! 💡
 	- You can probably detect these comments, and remove them from the platform
     - <p inline bg-gradient-to-r from-rose to-indigo bg-clip-text text-transparent font-extrabold>How well can we identify these comments using machine learning?</p>
@@ -284,7 +284,7 @@ hideInToc: true
 
 <v-click at=8>
  
-<carbon-arrow-right /> [MLOps decreases the burden of deploying ML systems by following best practices]{v-mark.highlight.yellow=8}
+<carbon-arrow-right /> [MLOps decreases the burden of deploying ML systems by establishing best practices]{v-mark.highlight.yellow=8}
 
 </v-click>
 
@@ -359,7 +359,7 @@ title: What is  MLOps?
 
 <v-clicks>
 
-- Availability
+- Infrastructure
 - Scalability
 - Reproducibility
 - Monitoring/Alerting
@@ -370,6 +370,41 @@ title: What is  MLOps?
 ::bottom::
 
 ## [✨ MLOps ✨]{.flex .justify-center .'-mt-20' v-click}
+
+---
+
+# DevOps vs. [MLOps]{.gradient-text} ?
+
+<br/>
+
+::left::
+
+## MLOps
+<br/>
+
+- Iterative-Incremental Development
+- [Automation]{v-mark.blue="'+1'"}
+- [Continuous Deployment]{v-mark.blue="'+1'"}
+- [Versioning]{v-mark.blue="'+1'"}
+- [Testing]{v-mark.blue="'+1'"}
+- [Reproducibility]{v-mark.blue="'+1'" v-mark.box.red="'+2'"}
+- Monitoring
+
+::right::
+
+<v-click at='+0'>
+
+## vs. DevOps
+
+<br/>
+
+\+ Model
+
+\+ Features
+
+\+ Data
+
+</v-click>
 
 ---
 
@@ -434,15 +469,16 @@ title: What is  MLOps?
 - [Models monitoring and (re)trainining]{v-mark.highlight.cyan=5}
 - [Data quality]{v-mark.highlight.red=6}
 - [Consistent project structure]{v-mark.highlight.cyan=7}
+- [Data availability]{v-mark.highlight.red=8}
 
 ::right::
 
-- [Data availability]{v-mark.highlight.red=8}
 - [Code and dependencies tracking]{v-mark.highlight.cyan=9}
 - [Auditability and regulations - reproducibility and explainability]{v-mark.highlight.cyan=10}
 - [Wrong initial assumptions (problem definition)]{v-mark.highlight.red=11}
 - [Locality of the data (distributional shift)]{v-mark.highlight.red=12}
-- [Deploy model systems(not just one off solutions)]{v-mark.highlight.cyan=13}
+- [Recreate model artifacts]{v-mark.highlight.cyan=13}
+- [Deploy model systems(not just one off solutions)]{v-mark.highlight.cyan=14}
 
 ---
 layout: cover
@@ -686,29 +722,45 @@ img {
 layout: cover
 ---
 
-# Demo
+# Content moderation on <span class='gradient-text'>Hacker News</span> in action <span animate animate-ping>🚀</span>
+
+## (Simplified) batch deployment demo
 
 ---
 
-# The tech
+# The tech 🧱
 
 <br/>
 <br/>
 
 <v-click>
-<div flex justify-center items-center space-x-10 h-80 p-5>
+<div flex justify-center items-center space-x-20 h-40 px-40>
 
 [![](https://duckdb.org/images/logo-dl/DuckDB_Logo.png)](https://duckdb.org/)
 
 [![](https://mma.prnewswire.com/media/1946939/MotherDuck_Logo.jpg?p=twitter)](https://motherduck.com/)
 
-<a href="https://modal.com/">
+</div>
+<div flex justify-center items-center space-x-20 h-40 px-40>
+  
 
-![](https://modal.com/assets/social-image.jpg){.rounded-xl.h-40.w-190.object-cover.aspect-video}
+[![](https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo-with-title.png)](https://huggingface.co/martin-ha/toxic-comment-model)
+
+<a href="https://modal.com/docs/examples/batch_inference_using_huggingface">
+
+![](https://modal.com/assets/social-image.jpg){.rounded-xl.h-30.w-240.object-cover.aspect-video}
 
 </a>
+
+
 </div>
 </v-click>
+
+---
+layout: cover
+---
+
+# [Real time]{.gradient-text} deployments 🚀
 
 ---
 
@@ -719,10 +771,10 @@ layout: cover
 ::right::
 
 <div w-full h-full flex flex-col justify-center items-center>
-	<v-click at=0>
+	<v-click>
 		<img src="https://www.element61.be/sites/default/files/img_knowledge_base/Microsoft.VisualStudio.Services.Icons.Default"  h-32 my-4 mr-48/>
 	</v-click>
-  	<v-click at=1>
+  	<v-click>
 		<img src="https://storage.googleapis.com/wandb-production.appspot.com/authors/images/views/180581/preview.png?md5=a320d3d81581929312e5049622631a43" rounded-xl shadow h-32 my-4 ml-48/>
 	</v-click>
 </div>
@@ -741,23 +793,15 @@ flowchart LR
   API --> batch("🍪")
   API --> realtime("👟")
 ```
+</div>
 
+<v-click>
 
-<div absolute>
-<v-click at=2>
-```mermaid
-flowchart LR
-  subgraph API
-  	direction TB
-  	cloud("☁️") <--> phone("📱")
-  end
-  API --> batch("🍪")
-  API --> realtime("👟")
-  style realtime fill:#445ba7,stroke:#445ba7,stroke-width:8px
-```
+<svg absolute top-0 width="980" height="551" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect fill="transparent" stroke="#ff595e" stroke-width="4" stroke-linecap="round" x="250" y="205" width="65.28" height="73.67" data-drauu_index="0"></rect>
+</svg>
+
 </v-click>
-</div>
-</div>
 
 <!--
 What does “serve a machine learning model mean”?
