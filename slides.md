@@ -764,9 +764,9 @@ layout: cover
 
 ---
 
-# ML in production
+# Real time applications
 
-## Serving models
+## [Serving]{.gradient-text} models
 
 ::right::
 
@@ -783,6 +783,7 @@ layout: cover
 ::left::
 
 <div relative w-full h-full flex justify-center items-center>
+<v-click>
 
 ```mermaid
 flowchart LR
@@ -793,9 +794,10 @@ flowchart LR
   API --> batch("🍪")
   API --> realtime("👟")
 ```
+</v-click>
 </div>
 
-<v-click>
+<v-click at=4>
 
 <svg absolute top-0 width="980" height="551" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect fill="transparent" stroke="#ff595e" stroke-width="4" stroke-linecap="round" x="250" y="205" width="65.28" height="73.67" data-drauu_index="0"></rect>
@@ -830,10 +832,7 @@ hideInToc: true
 
 ## Serving (API)
 
-<br/>
-
-<Asciinema src="casts/restapi.cast" :playerProps="{speed: 3, idleTimeLimit: 2, fit: false, terminalFontFamily: 'MesloLGS NF' }" scale-90 />
-
+<iframe src="https://asciinema.org/a/646947/iframe?speed=5" p-5 w-full h-105/>
 
 ---
 
