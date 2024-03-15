@@ -38,14 +38,19 @@ hideInToc: true
 # Agenda
 
 <br/>
+<br/>
 
 ::left::
-
-<Toc />
+<div class="w-120">
+<Toc columns=2 />
+</div>
 
 ::right::
 
-<img src="https://media.giphy.com/media/NytMLKyiaIh6VH9SPm/giphy.gif?cid=790b7611306dhsfqkf6esokoqs15cp6n2qs33oueers2dnr3&ep=v1_gifs_search&rid=giphy.gif" rounded-lg shadow h-70/>
+
+<v-click>
+<img src="https://media.giphy.com/media/xT39Db8zIOODTppk08/giphy.gif?cid=ecf05e47ky6sswcm0x0mbdj4g91jwluy4n5huo37ltpmjmxu&ep=v1_gifs_search&rid=giphy.gif&ct=g" rounded-lg shadow h-70/>
+</v-click>
 
 <style>
 li:not(li:first-child) {
@@ -201,11 +206,12 @@ hideInToc: true
 
 ---
 layout: cover
-title: What is  MLOps?
 ---
 
 # Why MLOps?
 
+---
+hideInToc: true
 ---
 
 # Use case: [content moderation]{.gradient-text}
@@ -248,6 +254,8 @@ hideInToc: true
 
 ![](https://media.giphy.com/media/3Fkw8DCq4eUxp31E4n/giphy.gif){.rounded-lg .shadow-lg .scale-80}
 
+---
+hideInToc: true
 ---
 
 # So you build a [model]{.gradient-text}...
@@ -324,11 +332,13 @@ hideInToc: true
 
 ---
 layout: cover
-title: What is  MLOps?
+title: What is MLOps?
 ---
 
 # What is [ML]{v-mark.red=1}[Ops]{v-mark.circle.yellow=2}?
 
+---
+hideInToc: true
 ---
 
 # What's in the [name]{.gradient-text}?
@@ -373,7 +383,7 @@ title: What is  MLOps?
 
 ---
 
-# DevOps vs. [MLOps]{.gradient-text} ?
+# DevOps vs. [MLOps]{.gradient-text}
 
 <br/>
 
@@ -407,6 +417,8 @@ title: What is  MLOps?
 </v-click>
 
 ---
+hideInToc: true
+---
 
 # DevOps vs. [MLOps]{.gradient-text}
 
@@ -424,6 +436,8 @@ title: What is  MLOps?
 </v-click>
 
 
+---
+hideInToc: true
 ---
 
 # So... what is it?
@@ -443,6 +457,8 @@ title: What is  MLOps?
 </div>
 
 ---
+hideInToc: true
+---
 
 # (MLOps in theory vs. [practice]{.gradient-text})
 
@@ -451,6 +467,8 @@ title: What is  MLOps?
 <iframe src="https://arxiv.org/ftp/arxiv/papers/2205/2205.02302.pdf" w-full h-95 rounded shadow-lg v-click/>
 
 
+---
+hideInToc: true
 ---
 
 # Pop Quiz 💥
@@ -530,6 +548,8 @@ flowchart LR
 </v-click>
 
 ---
+hideInToc: true
+---
 
 # MLOps [Illustrated]{.gradient-text}
 
@@ -599,6 +619,8 @@ layout: cover
 
 </v-click>
 
+---
+hideInToc: true
 ---
 
 # What does it [mean]{.gradient-text}?
@@ -720,13 +742,15 @@ img {
 layout: cover
 ---
 
-# Content moderation on <span class='gradient-text'>Hacker News</span> in action <span animate animate-ping>🚀</span>
+# <span class='gradient-text'>Hacker News</span> content moderation in action <span animate animate-ping>🚀</span>
 
 ## (Simplified) batch deployment demo
 
 ---
+hideInToc: true
+---
 
-# The tech 🧱
+# The [tech]{.gradient-text} 🧱
 
 <br/>
 <br/>
@@ -760,8 +784,10 @@ layout: cover
 
 # [Real time]{.gradient-text} deployments 🚀
 
-## And the problem of [latency]{v-mark.red='+0'}
+## And the problem of [latency]{v-mark.red=0}
 
+---
+hideInToc: true
 ---
 
 # Real time applications
@@ -836,7 +862,7 @@ hideInToc: true
 
 ---
 
-# Latency?
+# The problem of latency
 
 <div h-full w-full flex justify-center items-center>
   <img src="/static/latency.png" rounded shadow h-92/>
@@ -846,8 +872,9 @@ hideInToc: true
 hideInToc: true
 ---
 
-# Latency?
-<carbon-arrow-right/> why?
+# Why latency?
+
+<br/>
 
 <v-click at=5>
 <div w-full h-70 absolute flex justify-center items-center>
@@ -914,7 +941,7 @@ graph LR
 hideInToc: true
 ---
 
-# Latency?
+# What is latency?
 
 
 <br/>
@@ -994,6 +1021,8 @@ hideInToc: true
 
 <iframe src="https://asciinema.org/a/8PRQDcwFUTLXQ2WQYqczGV5IY/iframe?speed=2&idleTimeLimit=3" p-5 w-full h-105/>
 
+---
+hideInToc: true
 ---
 
 # Latency - what can we do about it?
@@ -1159,6 +1188,8 @@ hideInToc: true
 
 <iframe src="https://asciinema.org/a/iphbEPhRNdS01C2aupWDj5VMM/iframe?speed=2&idleTimeLimit=3" p-5 w-full h-115/>
 
+---
+hideInToc: true
 ---
 
 # Scaling is not always possible on [the edge]{.gradient-text}
@@ -1420,4 +1451,3 @@ hideInToc: true
 <div h-full w-full flex justify-center items-center>
   <img src="https://media.giphy.com/media/uWlpPGquhGZNFzY90z/giphy.gif" rounded shadow h-92/>
 </div>
-
