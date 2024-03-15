@@ -760,6 +760,8 @@ layout: cover
 
 # [Real time]{.gradient-text} deployments 🚀
 
+## And the problem of [latency]{v-mark.red='+0'}
+
 ---
 
 # Real time applications
@@ -1159,11 +1161,16 @@ hideInToc: true
 
 ---
 
-# Edge ML
+# Scaling is not always possible on [the edge]{.gradient-text}
 
-<div flex flex-col items-center justify-center class='h-2/3' mx-5>
+<br/>
+<br/>
+
+
+<div flex flex-col items-center justify-center class='h-1/3' mx-5>
   
-## “Edge machine learning (edge ML) is the process of running machine learning algorithms on computing devices at the periphery of a network to make decisions and predictions as close as possible to the originating source of data.”
+## “Edge machine learning (edge ML) is the process of running machine learning algorithms on computing devices [at the periphery of a network]{v-mark="{type:'highlight', color:'yellow', multiline:true, at:'+1'}"} to make decisions and predictions as close as possible to the originating source of data.”
+
 </div>
 <div flex justify-end w-full class='-mx-10'>
 
@@ -1171,33 +1178,35 @@ hideInToc: true
 
 </div>
 
+<br/>
 
 <div flex justify-center items-center>
-  <carbon-augmented-reality text-8xl mx-10/>
-  <carbon-building-insights-1 text-8xl mx-10/>
-  <carbon-ibm-watsonx-code-assistant-for-z text-8xl mx-10/>
+  <v-clicks>
+  <carbon-augmented-reality text-sky-700 text-8xl mx-10/>
+  <carbon-building-insights-1 text-sky-700 text-8xl mx-10/>
+  <carbon-ibm-watsonx-code-assistant-for-z text-sky-700 text-8xl mx-10/>
+  </v-clicks>
 </div>
 
 ---
 hideInToc: true
 ---
 
-# Edge ML
+# For limited resources and extremely low latencies, you may need to [look outside ML]{.gradient-text}
 <br/>
-<br/>
+
 
 ::left::
 
-<iframe w-full h-full rounded shadow src="https://arxiv.org/pdf/2212.09410.pdf" />
+<iframe w-full h-85 rounded shadow src="https://arxiv.org/pdf/2212.09410.pdf" />
 
 ::right::
 
-<div flex flex-col justify-center items-center>
+<div flex flex-wrap justify-center items-center>
 <div>
 	<img src="https://tvmconf.org/images/tvm-logo.png" h-24 mr-12 inline-block />
-	<carbon-machine-learning text-8xl align-middle/>
-  	<carbon-arrow-right text-4xl align-middle/>
- 	<carbon-machine-learning text-xl align-middle/>
+  <img src="https://maxdemarzidotcom.files.wordpress.com/2014/03/cache_all_the_things.jpg?w=580" h-48 my-4 rounded/>
+	<img src="https://assets.website-files.com/5f6353590bb01cacbcecfbac/62bcc94c0babe746f7156b64_hopsworks-logo%202022.svg" h-24 my-4/>
 </div>
   <br/>
   <br/>
@@ -1225,40 +1234,6 @@ I.e.: Sagemaker Neo and Apache TVM will compile models to specific hardware, imp
 
 ---
 
-# If all else fails?
-
-<carbon-arrow-right/> Alternatives
-
-<br/>
-<br/>
-
-::left::
-<v-click>
-<div h-full flex flex-col justify-center items-center>
-<img src="https://github.com/feast-dev/feast/raw/master/docs/assets/feast_logo.png" h-24 my-4/>
-
-<img src="https://assets.website-files.com/5f6353590bb01cacbcecfbac/62bcc94c0babe746f7156b64_hopsworks-logo%202022.svg" h-24 my-4/>
-</div>
-</v-click>
-
-::right::
-
-<v-click>
-<div flex justify-center>
-<img src="https://maxdemarzidotcom.files.wordpress.com/2014/03/cache_all_the_things.jpg?w=580" h-48 my-4 rounded/>
-</div>
-</v-click>
-
-<v-click>
-```python
-def model(input):
-	if input.isgood:
-    	return True
-	if input.isbad:
-    	return False
-```
-</v-click>
-
 <!--
 Rethink problem
 Change model architecture
@@ -1272,26 +1247,6 @@ Sacrifice correctness over performance
 -->
 
 ---
-
-# Testing
-
-<br/>
-
-::left::
-
-<v-clicks>
-
-- What is the model latency?
-- How well does it scale?
-- How quickly/slowly it scales?
-- Does it fit in memory?
-- How does it handle weird values?*
-
-</v-clicks>
-
-::right::
-
-<img src="https://media.giphy.com/media/aQQ0V6tr9DsCA/giphy.gif" h-48 my-4 rounded/>
 
 <!--
 Your model only brings value once it’s deployed
@@ -1310,7 +1265,7 @@ Stress tests
 layout: cover
 ---
 
-# Use cases
+# [Real time]{.gradient-text} use cases
 
 ---
 hideInToc: true
@@ -1421,25 +1376,27 @@ hideInToc: true
 
 # Recap
 
-<div h-92 w-full my-24 mx-48>
+<br/>
+<br/>
+<br/>
 
-```mermaid
-flowchart LR
-  subgraph API
-  	direction TB
-  	cloud("☁️") <--> phone("📱")
-  end
-  subgraph Tradeoffs
-  	direction TB
-    tradeoff("⚖️") --> scale("⚡️💻💻💻")
-    tradeoff --> cutoff("🔪")
-    tradeoff
-  end
-  startingpt("🍪\n👟") --> API
-  API --> tradeoff("⚖️")
-```
+<v-clicks>
 
-</div>
+- MLOps is a [set of principles]{v-mark.red=1} reduces the burden of deploying and maintaining models
+- Unless you're doing research, the [value]{v-mark.box.yellow=2} of models only come after they have been [deployed]{v-mark.circle.green=2}
+- How to deploy models depends on whether you have a [batch or real time]{v-mark.box.blue=3} use case
+- It's important to minimize [latency]{v-mark="{at:4, color:'red', brackets:['bottom'], type: 'bracket'}"} in real time use cases
+- Latency can be reduced by [scaling resources or reducing computational needs]{v-mark.highlight.yellow=5}
+
+</v-clicks>
+
+::bottom::
+
+<v-click>
+
+## <carbon-arrow-right/> [As ML gets easier and easier to do, MLOps and software engineering skills becomes increasingly important]{.gradient-text}
+
+</v-click>
 
 <!--
 When deploying models we usually have the patter of
@@ -1464,50 +1421,3 @@ hideInToc: true
   <img src="https://media.giphy.com/media/uWlpPGquhGZNFzY90z/giphy.gif" rounded shadow h-92/>
 </div>
 
----
-hideInToc: true
----
-
-# Resources
-
-::left::
-
-## Code and slides
-
-<div class="h-92 my-2 flex justify-center items-center">
-<QrCode h-80 url="https://github.com/datarootsio/rootsacademy-model-latency" />
-</div>
-
-::right::
-
-## Links
-
-<br/>
-<br/>
-
-- [llama.cpp](https://github.com/ggerganov/llama.cpp)
-- [Modal](https://modal.com/docs/guide)
-- [Stable LM demo](https://github.com/modal-labs/modal-examples/tree/main/06_gpu_and_ml/stable_lm)
-- [Awesome ML model compression](https://github.com/cedrickchee/awesome-ml-model-compression)
-- Articles:
-	- [How 🤗 Accelerate runs very large models thanks to PyTorch](https://huggingface.co/blog/accelerate-large-models)
-	- [Deep learning model compression](https://dataroots.io/research/contributions/deep-learning-model-compression/)
-
----
-layout: iframe
-
-# the web page source
-url: https://sli.dev/custom/config-unocss
----
-<!--
-1. mlops definitions - operations?
-2. ideal vs practical mlops
-3. ML Lifecycle
-4. use case, explained - content moderation
-5. batch vs. real time
-6. batch
-7. real time
-8. latency
-9. examples
-10. exercise/live demo
-11. -->
