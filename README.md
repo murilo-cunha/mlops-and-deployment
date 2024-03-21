@@ -1,4 +1,6 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Model deployment and MLOps slides
+
+> Slides were create using [Slidev](https://github.com/slidevjs/slidev)!
 
 To start the slide show:
 
