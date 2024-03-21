@@ -47,9 +47,11 @@ hideInToc: true
 
 ::right::
 
+<br/>
+<br/>
 
 <v-click>
-<img src="https://media.giphy.com/media/xT39Db8zIOODTppk08/giphy.gif?cid=ecf05e47ky6sswcm0x0mbdj4g91jwluy4n5huo37ltpmjmxu&ep=v1_gifs_search&rid=giphy.gif&ct=g" rounded-lg shadow h-70/>
+<img src="https://media.giphy.com/media/LqxlJ7XfwalmnjuXLG/giphy.gif?cid=790b7611au4w07qs9j8fpotirybp58xnmwrwton2c64kmild&ep=v1_gifs_search&rid=giphy.gif&ct=g" rounded-lg shadow scale-120/>
 </v-click>
 
 <style>
@@ -205,14 +207,6 @@ hideInToc: true
 </div>
 
 ---
-layout: cover
----
-
-# Why MLOps?
-
----
-hideInToc: true
----
 
 # Use case: [content moderation]{.gradient-text}
 
@@ -258,354 +252,21 @@ hideInToc: true
 hideInToc: true
 ---
 
-# So you build a [model]{.gradient-text}...
+# So you get to [work]{.gradient-text}...
 
 <br/>
 <br/>
-
-::right::
-
-<br/>
-
-![](http://jalammar.github.io/images/gpt3/10-gpt3-fine-tuning.gif){.rounded .shadow-xl .object-contain v-click=1}
-
-::left::
-
-
-<v-clicks at=2>
-
-👨‍💼 "How long will it take to go though 100 posts? How can we make it faster?"
-
-👷‍♀️ "How can we make sure the model scales?"
-
-👷‍♂️ "What packages did you use?"
-
-😡 "Why is it removing my posts?"
-
-👩‍🔬 "What models did you already try?"
-
-🕵️ "What data was used to train this model?"
-
-</v-clicks>
-
-::bottom::
-
-<v-click at=8>
- 
-<carbon-arrow-right /> [MLOps decreases the burden of deploying ML systems by establishing best practices]{v-mark.highlight.yellow=8}
-
-</v-click>
-
----
-
-# Real life [testimonials]{.gradient-text}
-
-<v-clicks>
-<div border-5 border-sky-50 shadow p-2 my-4 rounded-lg bg-sky-50>
-
-### “At this point, everybody does what they like, there is [little to no standardisation]{v-mark.red=1}. Since there are little to [no best practices]{v-mark.box.yellow=1}, the current platform contains the largest common denominator of a lot of heterogeneous projects. This causes a lot of [burden in maintaining]{v-mark.circle.pink=1} these projects”
-
-</div>
-<div border-5 border-sky-50 shadow p-2 my-4 rounded-lg bg-sky-50>
-
-### “For quite some time, the focus was on more traditional Business Intelligence and Data Engineering. More recently we have seen the focus shifted more towards Advanced Analytics in the form of some scattered initiatives and products, which in turn lead to [little success]{v-mark.highlight.yellow=2} on these.”
-
-</div>
-<div border-5 border-sky-50 shadow p-2 my-4 rounded-lg bg-sky-50>
-
-### “While I love our Data Science team, the [code they write is not at all up to standards]{v-mark.box.red=3} in comparison to what we normally push into production. This puts a [heavy burden]{v-mark.circle.yellow=3} on the Data Engineering team to [rewrite and refactor]{v-mark.highlight.yellow=3} this. At the same time the Data Science team is often [unhappy]{v-mark.blue=3}, because this refactoring process tends to introduce [mistakes or misunderstandings]{v-mark.highlight.cyan=3}.”
-
-</div>
-</v-clicks>
-
-<v-click>
-
-### <carbon-arrow-right/> When we talk MLOps we often talk deployment and/or [deployed models]{.gradient-text}
-
-</v-click>
-
-<style>
-  h3 {
-    @apply text-base !important;
-  }
-</style>
-
----
-layout: cover
-title: What is MLOps?
----
-
-# What is [ML]{v-mark.red=1}[Ops]{v-mark.circle.yellow=2}?
-
----
-hideInToc: true
----
-
-# What's in the [name]{.gradient-text}?
-
 <br/>
 
 ::left::
 
-## Machine learning 🧠
 
-<br/>
 
-<v-clicks>
-
-- Experimentation
-- Data exploration
-- Modelling
-- Hyperparameter tuning
-- Evaluation
-
-</v-clicks>
+![](https://media.tenor.com/8Fb7PwhTdJIAAAAM/stack-overflow-close-tabs.gif){.rounded.shadow.scale-120.mx-10 v-click}
 
 ::right::
 
-## Operations ⚙️
-
-<br/>
-
-<v-clicks>
-
-- Infrastructure
-- Scalability
-- Reproducibility
-- Monitoring/Alerting
-- Automation
-
-</v-clicks>
-
-::bottom::
-
-## [✨ MLOps ✨]{.flex .justify-center .'-mt-20' v-click}
-
----
-
-# DevOps vs. [MLOps]{.gradient-text}
-
-<br/>
-
-::left::
-
-## MLOps
-<br/>
-
-- Iterative-Incremental Development
-- [Automation]{v-mark.blue="'+1'"}
-- [Continuous Deployment]{v-mark.blue="'+1'"}
-- [Versioning]{v-mark.blue="'+1'"}
-- [Testing]{v-mark.blue="'+1'"}
-- [Reproducibility]{v-mark.blue="'+1'" v-mark.box.red="'+2'"}
-- Monitoring
-
-::right::
-
-<v-click at='+0'>
-
-## vs. DevOps
-
-<br/>
-
-\+ Model
-
-\+ Features
-
-\+ Data
-
-</v-click>
-
----
-hideInToc: true
----
-
-# DevOps vs. [MLOps]{.gradient-text}
-
-![](https://valohai.com/blog/difference-between-devops-and-mlops/mldevops.png){.rounded .shadow .bg-blue .scale-50 v-click .'-mt-20' .'-mb-25'}
-
-
-<v-click>
-<div>
-
-## [MLOps principles](https://ml-ops.org/content/mlops-principles):
-
-"[...] By codifying these practices, we hope to accelerate the adoption of ML/AI in software systems and fast delivery of intelligent software. In the following, we describe a set of important concepts in MLOps such as [Iterative-Incremental Development, Automation, Continuous Deployment, Versioning, Testing, Reproducibility, and Monitoring]{v-mark="{type:'highlight', color:'yellow', multiline:true, at:2}"}."
-
-</div>
-</v-click>
-
-
----
-hideInToc: true
----
-
-# So... what is it?
-
-<br/>
-
-<div flex flex-col items-center justify-center h-full mx-5>
-  
-## “The [level]{v-mark.circle.blue=1} of automation of these steps defines the maturity of the ML process, which [reflects the velocity of training new models given new data or training new models given new implementations]{v-mark="{type:'highlight', color:'yellow', multiline:true, at:2}"}. The following sections describe three levels of MLOps, starting from the most common level, which involves no automation, up to automating both ML and CI/CD pipelines.”
-
-</div>
-
-<div flex justify-end w-full class='-mx-10'>
-
-## [- Google](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
-
-</div>
-
----
-hideInToc: true
----
-
-# (MLOps in theory vs. [practice]{.gradient-text})
-
-[> “In theory, theory and practice are the same. In practice, they are not.” - Einstein]{v-click}
-
-<iframe src="https://arxiv.org/ftp/arxiv/papers/2205/2205.02302.pdf" w-full h-95 rounded shadow-lg v-click/>
-
-
----
-hideInToc: true
----
-
-# Pop Quiz 💥
-
-## For each of these challenges, which ones are related to [ML]{v-mark.highlight.red=1} or [Ops]{v-mark.highlight.cyan=1} ?
-
-<br/>
-
-::left::
-
-- [Models and experiments are not properly tracked]{v-mark.highlight.cyan=2}
-- [Model decay]{v-mark.highlight.red=3}
-- [Changing business objectives]{v-mark.highlight.red=4}
-- [Models monitoring and (re)trainining]{v-mark.highlight.cyan=5}
-- [Data quality]{v-mark.highlight.red=6}
-- [Consistent project structure]{v-mark.highlight.cyan=7}
-- [Data availability]{v-mark.highlight.red=8}
-
-::right::
-
-- [Code and dependencies tracking]{v-mark.highlight.cyan=9}
-- [Auditability and regulations - reproducibility and explainability]{v-mark.highlight.cyan=10}
-- [Wrong initial assumptions (problem definition)]{v-mark.highlight.red=11}
-- [Locality of the data (distributional shift)]{v-mark.highlight.red=12}
-- [Recreate model artifacts]{v-mark.highlight.cyan=13}
-- [Deploy model systems(not just one off solutions)]{v-mark.highlight.cyan=14}
-
----
-layout: cover
----
-
-# MLOps Illustrated
-## ML Lifecyle Recap
-
-
----
-hideInToc: true
----
-
-# ML lifecycle & development (simplified)
-
-<div h-full flex flex-col justify-center items-center scale-250 my-20 space-y-5>
-
-<v-clicks>
-```mermaid
-%%{init: {"flowchart": {"htmlLabels": false}} }%%
-flowchart LR
-    idea["`💡
-    Idea`"]
-    poc["`Proof-of-Concept 🤖`"]
-    mvp["`Minimal Viable Product 🦴`"]
-    prod["`Iterate 🚀`"]
-    
-    idea --> poc --> mvp --> prod
-```
-
-```mermaid
-%%{init: {"flowchart": {"htmlLabels": false}} }%%
-flowchart LR
-    eda["`Exploratory Data Analysis 🔎`"]
-    model["`Modeling 📦`"]
-    eval["`Evaluation ⚖️`"]
-    deploy["`Deployment 🏗️`"]
-    monitor["`Monitoring 👀`"]
-    eval .-> model
-    eval .-> eda    
-    eda --> model --> eval --> deploy --> monitor
-```
-
-</v-clicks>
-</div>
-
-<v-click>
-
-![](/static/21.svg){.absolute .top-0 .scale-110}
-
-</v-click>
-
----
-hideInToc: true
----
-
-# MLOps [Illustrated]{.gradient-text}
-
-::left::
-
-<v-clicks depth=2>
-
-- Data versioning 🚀
-    - Reproducing models and scores 
-- Feature engineering 📦
-	- Version code + artifacts
-- Model training 🌱
-	- Track experiments (models hyperparameters, etc.)
-    - Use seeds
-- Quality assurance 🔍
-	- Unit/integration tests 
-    - Statistical tests
-    - Stability tests
-    - GenAI tests? - Validation, self reflection, etc.
-- Prepare for deployment 🏗️
-	- Packaging and containerizing!
-
-</v-clicks>
-
-::right::
-
-<div flex justify-center items-center  h-full flex-wrap>
-<v-clicks>
-  
-![](https://dvc.org/img/dvc_icon-color--square_vector.svg)
-
-![](https://www.tensorflow.org/static/site-assets/images/project-logos/tensorboard-logo-social.png)
-
-![](https://charliermarsh.gallerycdn.vsassets.io/extensions/charliermarsh/ruff/2023.44.0/1698164549637/Microsoft.VisualStudio.Services.Icons.Default)
-
-![](https://www.mlflow.org/docs/1.24.0/_static/MLflow-logo-final-black.png)
-
-![](https://static-00.iconduck.com/assets.00/docker-icon-2048x2048-5mc7mvtn.png)
-
-![](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
-  
-![](https://avatars.githubusercontent.com/u/44036562?s=280){.px-3}
-
-![](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/11/guild-AI.jpeg?fit=400%2C400&ssl=1){.rounded-lg}
-
-</v-clicks>
-</div>
-
-<style>
-li {
-  margin-top: 0 !important;
-}
-img {
-@apply h-20 m-2 inline !important;
- }
-</style>
+![](http://jalammar.github.io/images/gpt3/10-gpt3-fine-tuning.gif){.rounded .shadow-xl .object-contain v-click}
 
 ---
 layout: cover
@@ -1233,17 +894,17 @@ hideInToc: true
 
 ::right::
 
-<div flex flex-wrap justify-center items-center>
-<div>
-	<img src="https://tvmconf.org/images/tvm-logo.png" h-24 mr-12 inline-block />
-  <img src="https://maxdemarzidotcom.files.wordpress.com/2014/03/cache_all_the_things.jpg?w=580" h-48 my-4 rounded/>
-	<img src="https://assets.website-files.com/5f6353590bb01cacbcecfbac/62bcc94c0babe746f7156b64_hopsworks-logo%202022.svg" h-24 my-4/>
-</div>
-  <br/>
-  <br/>
-<div>
-  <img src="https://user-images.githubusercontent.com/1991296/230134379-7181e485-c521-4d23-a0d6-f7b3b61ba524.png" h-32/>
-</div>
+<br/>
+
+
+<div flex flex-wrap justify-center items-center space-y-10 space-x-4 >
+  <img src="https://tvmconf.org/images/tvm-logo.png" h-18 scale-120/>
+  <img src="https://assets.website-files.com/5f6353590bb01cacbcecfbac/62bcc94c0babe746f7156b64_hopsworks-logo%202022.svg" h-18/>
+  
+  <img src="https://maxdemarzidotcom.files.wordpress.com/2014/03/cache_all_the_things.jpg?w=580" h-32 rounded/>
+
+  <img src="https://user-images.githubusercontent.com/1991296/230134379-7181e485-c521-4d23-a0d6-f7b3b61ba524.png" h-28 w-48 object-cover rounded/>
+
 </div>
 
 <!--
@@ -1261,11 +922,7 @@ Model distillation - teach smaller models
 Model pruning - remove “weak” connections
 Use specific hardware
 I.e.: Sagemaker Neo and Apache TVM will compile models to specific hardware, improving overall performance for edge devices
--->
 
----
-
-<!--
 Rethink problem
 Change model architecture
 I.e.: apply dimensionality reduction techniques on inputs to reduce model complexity
@@ -1275,11 +932,7 @@ I.e.: feature stores* can be used to store purchase histories that can be used w
 (*feature stores will be tackled on a separate lesson)
 i.e.: LLMs may get better by giving more capabilities to LLMs
 Sacrifice correctness over performance
--->
 
----
-
-<!--
 Your model only brings value once it’s deployed
 A model that does not meet the latency requirements is worse than a poorly predicting model
 Other model deployment metrics to consider
@@ -1401,6 +1054,366 @@ First step reduces the amount of images to be used in the ML model
 Use Open Neural Network Exchange (ONNX) format for better performance
 -->
 
+
+---
+layout: cover
+---
+
+# Why MLOps?
+
+---
+hideInToc: true
+---
+
+# So you have a [model]{.gradient-text}...
+
+<br/>
+<br/>
+
+::right::
+
+<br/>
+
+![](http://jalammar.github.io/images/gpt3/10-gpt3-fine-tuning.gif){.rounded .shadow-xl .object-contain v-click=1}
+
+::left::
+
+
+<v-clicks at=2>
+
+👨‍💼 "How long will it take to go though 100 posts? How can we make it faster?"
+
+👷‍♀️ "How can we make sure the model scales?"
+
+👷‍♂️ "What packages did you use?"
+
+😡 "Why is it removing my posts?"
+
+👩‍🔬 "What models did you already try?"
+
+🕵️ "What data was used to train this model?"
+
+</v-clicks>
+
+::bottom::
+
+<v-click at=8>
+ 
+<carbon-arrow-right /> [MLOps decreases the burden of deploying ML systems by establishing best practices]{v-mark.highlight.yellow=8}
+
+</v-click>
+
+---
+
+# Real life [testimonials]{.gradient-text}
+
+<v-clicks>
+<div border-5 border-sky-50 shadow p-2 my-4 rounded-lg bg-sky-50>
+
+### “At this point, everybody does what they like, there is [little to no standardisation]{v-mark.red=1}. Since there are little to [no best practices]{v-mark.box.yellow=1}, the current platform contains the largest common denominator of a lot of heterogeneous projects. This causes a lot of [burden in maintaining]{v-mark.circle.pink=1} these projects”
+
+</div>
+<div border-5 border-sky-50 shadow p-2 my-4 rounded-lg bg-sky-50>
+
+### “For quite some time, the focus was on more traditional Business Intelligence and Data Engineering. More recently we have seen the focus shifted more towards Advanced Analytics in the form of some scattered initiatives and products, which in turn lead to [little success]{v-mark.highlight.yellow=2} on these.”
+
+</div>
+<div border-5 border-sky-50 shadow p-2 my-4 rounded-lg bg-sky-50>
+
+### “While I love our Data Science team, the [code they write is not at all up to standards]{v-mark.box.red=3} in comparison to what we normally push into production. This puts a [heavy burden]{v-mark.circle.yellow=3} on the Data Engineering team to [rewrite and refactor]{v-mark.highlight.yellow=3} this. At the same time the Data Science team is often [unhappy]{v-mark.blue=3}, because this refactoring process tends to introduce [mistakes or misunderstandings]{v-mark.highlight.cyan=3}.”
+
+</div>
+</v-clicks>
+
+<v-click>
+
+### <carbon-arrow-right/> When we talk MLOps we often talk deployment and/or [deployed models]{.gradient-text}
+
+</v-click>
+
+<style>
+  h3 {
+    @apply text-base !important;
+  }
+</style>
+
+---
+layout: cover
+title: What is MLOps?
+---
+
+# What is [ML]{v-mark.red=1}[Ops]{v-mark.circle.yellow=2}?
+
+---
+hideInToc: true
+---
+
+# What's in the [name]{.gradient-text}?
+
+<br/>
+
+::left::
+
+## Machine learning 🧠
+
+<br/>
+
+<v-clicks>
+
+- Experimentation
+- Data exploration
+- Modelling
+- Hyperparameter tuning
+- Evaluation
+
+</v-clicks>
+
+::right::
+
+## Operations ⚙️
+
+<br/>
+
+<v-clicks>
+
+- Infrastructure
+- Scalability
+- Reproducibility
+- Monitoring/Alerting
+- Automation
+
+</v-clicks>
+
+::bottom::
+
+## [✨ MLOps ✨]{.flex .justify-center .'-mt-20' v-click}
+
+---
+
+# DevOps vs. [MLOps]{.gradient-text}
+
+<br/>
+
+::left::
+
+## MLOps
+<br/>
+
+- Iterative-Incremental Development
+- [Automation]{v-mark.blue="'+1'"}
+- [Continuous Deployment]{v-mark.blue="'+1'"}
+- [Versioning]{v-mark.blue="'+1'"}
+- [Testing]{v-mark.blue="'+1'"}
+- [Reproducibility]{v-mark.blue="'+1'" v-mark.box.red="'+2'"}
+- Monitoring
+
+::right::
+
+<v-click at='+0'>
+
+## vs. DevOps
+
+<br/>
+
+\+ Model
+
+\+ Features
+
+\+ Data
+
+</v-click>
+
+---
+hideInToc: true
+---
+
+# DevOps vs. [MLOps]{.gradient-text}
+
+![](https://valohai.com/blog/difference-between-devops-and-mlops/mldevops.png){.rounded .shadow .bg-blue .scale-50 v-click .'-mt-20' .'-mb-25'}
+
+
+<v-click>
+<div>
+
+## [MLOps principles](https://ml-ops.org/content/mlops-principles):
+
+"[...] By codifying these practices, we hope to accelerate the adoption of ML/AI in software systems and fast delivery of intelligent software. In the following, we describe a set of important concepts in MLOps such as [Iterative-Incremental Development, Automation, Continuous Deployment, Versioning, Testing, Reproducibility, and Monitoring]{v-mark="{type:'highlight', color:'yellow', multiline:true, at:2}"}."
+
+</div>
+</v-click>
+
+
+---
+hideInToc: true
+---
+
+# So... what is it?
+
+<br/>
+
+<div flex flex-col items-center justify-center h-full mx-5>
+  
+## “The [level]{v-mark.circle.blue=1} of automation of these steps defines the maturity of the ML process, which [reflects the velocity of training new models given new data or training new models given new implementations]{v-mark="{type:'highlight', color:'yellow', multiline:true, at:2}"}. The following sections describe three levels of MLOps, starting from the most common level, which involves no automation, up to automating both ML and CI/CD pipelines.”
+
+</div>
+
+<div flex justify-end w-full class='-mx-10'>
+
+## [- Google](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
+
+</div>
+
+---
+hideInToc: true
+---
+
+# (MLOps in theory vs. [practice]{.gradient-text})
+
+[> “In theory, theory and practice are the same. In practice, they are not.” - Einstein]{v-click}
+
+<iframe src="https://arxiv.org/ftp/arxiv/papers/2205/2205.02302.pdf" w-full h-95 rounded shadow-lg v-click/>
+
+
+---
+hideInToc: true
+---
+
+# Pop Quiz 💥
+
+## For each of these challenges, which ones are related to [ML]{v-mark.highlight.red=1} or [Ops]{v-mark.highlight.cyan=1} ?
+
+<br/>
+
+::left::
+
+- [Models and experiments are not properly tracked]{v-mark.highlight.cyan=2}
+- [Model decay]{v-mark.highlight.red=3}
+- [Changing business objectives]{v-mark.highlight.red=4}
+- [Models monitoring and (re)trainining]{v-mark.highlight.cyan=5}
+- [Data quality]{v-mark.highlight.red=6}
+- [Consistent project structure]{v-mark.highlight.cyan=7}
+- [Data availability]{v-mark.highlight.red=8}
+
+::right::
+
+- [Code and dependencies tracking]{v-mark.highlight.cyan=9}
+- [Auditability and regulations - reproducibility and explainability]{v-mark.highlight.cyan=10}
+- [Wrong initial assumptions (problem definition)]{v-mark.highlight.red=11}
+- [Locality of the data (distributional shift)]{v-mark.highlight.red=12}
+- [Recreate model artifacts]{v-mark.highlight.cyan=13}
+- [Deploy model systems(not just one off solutions)]{v-mark.highlight.cyan=14}
+
+---
+layout: cover
+---
+
+# MLOps Illustrated
+## ML Lifecyle Recap
+
+
+---
+hideInToc: true
+---
+
+# ML lifecycle & development (simplified)
+
+<div h-full flex flex-col justify-center items-center scale-250 my-20 space-y-5>
+
+<v-clicks>
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+    idea["`💡
+    Idea`"]
+    poc["`Proof-of-Concept 🤖`"]
+    mvp["`Minimal Viable Product 🦴`"]
+    prod["`Iterate 🚀`"]
+    
+    idea --> poc --> mvp --> prod
+```
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+    eda["`Exploratory Data Analysis 🔎`"]
+    model["`Modeling 📦`"]
+    eval["`Evaluation ⚖️`"]
+    deploy["`Deployment 🏗️`"]
+    monitor["`Monitoring 👀`"]
+    eval .-> model
+    eval .-> eda    
+    eda --> model --> eval --> deploy --> monitor
+```
+
+</v-clicks>
+</div>
+
+<v-click>
+
+![](/static/21.svg){.absolute .top-0 .scale-110}
+
+</v-click>
+
+---
+hideInToc: true
+---
+
+# MLOps [Illustrated]{.gradient-text}
+
+::left::
+
+<v-clicks depth=2>
+
+- Data versioning 🚀
+    - Reproducing models and scores 
+- Feature engineering 📦
+	- Version code + artifacts
+- Model training 🌱
+	- Track experiments (models hyperparameters, etc.)
+    - Use seeds
+- Quality assurance 🔍
+	- Unit/integration tests 
+    - Statistical tests
+    - Stability tests
+    - GenAI tests? - Validation, self reflection, etc.
+- Prepare for deployment 🏗️
+	- Packaging and containerizing!
+
+</v-clicks>
+
+::right::
+
+<div flex justify-center items-center  h-full flex-wrap>
+<v-clicks>
+  
+![](https://dvc.org/img/dvc_icon-color--square_vector.svg)
+
+![](https://www.tensorflow.org/static/site-assets/images/project-logos/tensorboard-logo-social.png)
+
+![](https://charliermarsh.gallerycdn.vsassets.io/extensions/charliermarsh/ruff/2023.44.0/1698164549637/Microsoft.VisualStudio.Services.Icons.Default)
+
+![](https://www.mlflow.org/docs/1.24.0/_static/MLflow-logo-final-black.png)
+
+![](https://static-00.iconduck.com/assets.00/docker-icon-2048x2048-5mc7mvtn.png)
+
+![](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
+  
+![](https://avatars.githubusercontent.com/u/44036562?s=280){.px-3}
+
+![](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/11/guild-AI.jpeg?fit=400%2C400&ssl=1){.rounded-lg}
+
+</v-clicks>
+</div>
+
+<style>
+li {
+  margin-top: 0 !important;
+}
+img {
+@apply h-20 m-2 inline !important;
+ }
+</style>
+
 ---
 hideInToc: true
 ---
@@ -1413,11 +1426,12 @@ hideInToc: true
 
 <v-clicks>
 
-- MLOps is a [set of principles]{v-mark.red=1} reduces the burden of deploying and maintaining models
-- Unless you're doing research, the [value]{v-mark.box.yellow=2} of models only come after they have been [deployed]{v-mark.circle.green=2}
-- How to deploy models depends on whether you have a [batch or real time]{v-mark.box.blue=3} use case
-- It's important to minimize [latency]{v-mark="{at:4, color:'red', brackets:['bottom'], type: 'bracket'}"} in real time use cases
-- Latency can be reduced by [scaling resources or reducing computational needs]{v-mark.highlight.yellow=5}
+- How to deploy models depends on whether you have a [batch or real time]{v-mark.box.blue=1} use case
+- It's important to minimize [latency]{v-mark="{at:2, color:'red', brackets:['bottom'], type: 'bracket'}"} in real time use cases
+- Latency can be reduced by [scaling resources or reducing computational needs]{v-mark.highlight.yellow=3}
+- MLOps is a [set of principles]{v-mark.red=4} reduces the burden of deploying and maintaining models
+- Unless you're doing research, the [value]{v-mark.box.yellow=5} of models only come after they have been [deployed]{v-mark.circle.green=5}
+
 
 </v-clicks>
 
